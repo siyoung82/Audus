@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+.num-txt {font-family: 'Roboto', sans-serif;}
+.round_box {display: block;border-radius: 10px!important;  padding: 20px;  position: relative}
+.round_box.bg01 {background-color: #7161f7;}/* purple */
+.round_box.bg02 {background-color: #f4f4f4; padding: 20px 20px 14px 20px!important;}/* gray */
+.round_box.bg03 {background-color: #f4f4f4; padding: 10px 10px 10px 8px!important;}/* gray */
+.round_box.bg04 {background-color: #7161f7; box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);}/* purple */
+.round_box.bg05 {background-color: #fff; box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);}/* white */
+.round_box.bg06 {background-color: #fff;border: solid 1px #e4e4e4; padding: 20px 20px 16px 15px}/* white */
+
+.font-tp01 {color: #b4abfd; font-family: 'Roboto';font-size: 12px!important;}
+.font-tp02 {color: #b4abfd; font-family: 'Roboto';font-size: 14px!important;}
+.error-txt {font-size: 12px;color: #7538ff; margin-top: 10px;}
+
+/* main */
+.coin-balance .num {font-family: 'Roboto', sans-serif;font-size: 1.875em; font-weight: 500; color: #fff;}
+.coin-balance .num span,.money-balance .num span {padding-left: 3px;}
+.coin-balance strong {font-size: 14px; color: #fff;}
+.money-balance {border-bottom: 1px solid #8a7ef4; overflow: hidden; padding-bottom: 15px; margin-bottom: 15px;}
+.money-balance .area {float: left; width: 50%;}
+.money-balance .num {font-size: 16px; font-weight: 500; color: #fff;}
+.address-ed {position: relative}
+.address-ed .num {font-size: 10px; color: #fff;}
+.copy {display: inline-block;width: 37px;height: 22px;border-radius: 4px;background-color: #ffffff;color: #4c4c4c;font-size: 12px; text-align: center;line-height: 22px; margin-left: 5px; position: absolute; right: 0; top: 11px}
+
+/* 거래내역 */
+.t-history-list {color: #4c4c4c;}
+.t-history-list li{margin-bottom: 10px;}
+.t-history-list .address {font-size: 10px; margin-bottom: 0!important}
+.t-history-list .date {font-size: 12px; margin-top: 4px; margin-bottom: 0}
+.t-history .no-list {font-size: 14px; color: #b7b7b7; text-align: center; margin-top: 50px;}
+.t-history .t-empty,.t-history .a-empty {font-size: 14px; color: #92a8bc; text-align: center; margin-top: 50%; padding-top: 82px;}
+.t-history .t-empty {background: url(../images/no-transaction.png) center top no-repeat; background-size: 72px 72px;  }
+.t-history .a-empty {background: url(../images/no-account.png) center top no-repeat; background-size: 73px 73px; }
+
+.thumbnail-cont {display: flex; }
+.thumbnail-cont .qr_img {width: 80px; height: 80px; background: #fff; padding: 5px; margin-right: 22px;}
+.thumbnail-cont .qr_img img {width: 70px; height: 70px;}
+.thumbnail-cont .info {width: 70%;}
+.thumbnail-cont .info strong {font-size: 12px; font-weight: bold; margin-top: 5px;}
+.thumbnail-cont .info .address {font-size: 10px; max-width: 145px; word-wrap: break-word}
+.thumbnail-cont .list-more-btn {width: 20px; position: relative}
+
+.t-history-list .num ,.thumbnail-cont .info .num{font-size: 20px;font-weight: 500;}
+.t-history-list .num img {vertical-align: top; margin-top: 4px; margin-right: 9px; object-fit: contain;}
+.t-history-list .num span,.thumbnail-cont .info .num span{font-size: 12px; font-weight: normal; margin-left: 2px;}
+.more {position: absolute; right: 0; top: 8px; width: 20px; height: 20px; text-align: center}
+.more img {height: 20px;}
+
+/* 계정관련 */
+.account-info {display: flex; margin-bottom: 10px;}
+.round-ico-area {width: 44px; margin-right: 10px;}
+.round-ico {width: 34px; height: 34px; background-color: #7161f7; border-radius: 100px 100px; text-align: center;}
+.adr_info {background: url(../images/ico-address.png) left top no-repeat; background-size: 22px 22px; display: inline-block; width: 22px; height: 22px; margin-top: 6px }
+.key_info {background: url(../images/ico-key.png) left top no-repeat; background-size: 14px 20px; display: inline-block; width: 14px; height: 20px; margin-top: 7px }
+.word_info {background: url(../images/ico-word.png) left top no-repeat; background-size: 20px 14px; display: inline-block; width: 20px; height: 14px; margin-top: 10px }
+.cording_info {background: url(../images/ico-coding.png) left top no-repeat; background-size: 20px 20px; display: inline-block; width: 20px; height: 20px; margin-top: 7px }
+.account-cont {width: 100%; position: relative; line-height: 1.2;}
+.account-cont strong{font-size: 14px; color: #7161f7; font-weight: bold;}
+.account-cont .code {width: 100%;}
+.account-cont .code span {font-size: 12px; color: #b7b7b7; display: inline-block;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;width: 195px;}
+.account-cont .code .copy-btn {width: 37px;height: 22px;border-radius: 4px;background-color: #beccd9; font-size: 12px; color: #fff!important; text-align: center; line-height: 22px; position: absolute; right: 0; top: 16px;}
+.account-cont .sub-txt {font-size: 12px; color: #b7b7b7; margin-top: 2px; letter-spacing: -0.07em}
+.select-area {overflow: hidden; margin-bottom: 15px}
+.select-area li {float: left; margin-right: 14px;}
+
+/* 회원관련 */
+.search-idpw {text-align: right; margin-top: 5px;}
+.search-idpw a{color: #b7b7b7!important; font-size: 12px; margin: 0 8px}
+.search-idpw a:last-child {margin: 0 0 0 8px}
+.search-idpw .line {width: 1px;height: 8px;background-color: #ced4e2;display:inline-block; vertical-align: middle}
+.login-area {position: fixed; bottom: 30px; text-align: center; left: 0; right: 0; font-size: 12px;}
+.login-area p {color: #b7b7b7;  margin: 0}
+.login-area a{color: #2b2b2b; font-weight: bold; text-decoration:underline!important; margin-top: 4px; display: inline-block}
+.agree-area {font-size: 12px; margin-top: 20px; text-align: center}
+.agree-area a {font-weight: bold; text-decoration: underline!important; }
+.agree-area label {vertical-align: middle; margin-bottom: 2px!important}
+
+/* layer */
+.all-del {min-width: 140px!important; left: -120px!important; top: 36px!important; margin: 0!important; border: 0!important; text-align: center!important; padding: 0!important}
+.all-del a {color: #fff!important; height: 44px!important; display: block; line-height: 45px!important}
+.list-info {min-width: 140px!important; left: -130px!important; top:10px!important; margin: 0!important; border: 0!important; text-align: center!important; padding: 0!important; z-index: 9999;}
+.list-info-menu {height: 44px!important; display: block; line-height: 45px!important; color: #414141!important}
+.list-info-menu:first-child {border-bottom: 1px solid #e4e4e4;}
+
+/* form */
+.input-area label {font-size: 12px!important; color: #4c4c4c!important; font-weight: normal!important}
+.input-area input[type="text"],.input-area input[type="password"] {padding: 0 20px!important; border-radius: 6px;border: solid 1px #e4e4e4;background-color: #ffffff; height: 48px; color: #4c4c4c!important}
+.input-area input[type="text"].v1 {text-align: center; font-size: 10px;}
+.input-area input::placeholder {color: #b7b7b7!important; font-size: 12px!important}
