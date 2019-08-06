@@ -2,5 +2,5 @@
 
 @import url("kr/base.css");  /* 기본 setting */
 @import url("kr/common.css"); /* layout & 공통요소 */
-@import url("kr/font.css");
+@import url("kr/fonts.css");
 @import url("kr/content.css"); 

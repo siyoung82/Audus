@@ -31,14 +31,18 @@
 .t-history-list .date {font-size: 12px; margin-top: 4px; margin-bottom: 0}
 .t-history .no-list {font-size: 14px; color: #b7b7b7; text-align: center; margin-top: 50px;}
 .t-history .t-empty,.t-history .a-empty {font-size: 14px; color: #92a8bc; text-align: center; margin-top: 50%; padding-top: 82px;}
-.t-history .t-empty {background: url(../images/no-transaction.png) center top no-repeat; background-size: 72px 72px;  }
-.t-history .a-empty {background: url(../images/no-account.png) center top no-repeat; background-size: 73px 73px; }
+.t-history .t-empty {background: url(../../images/no-transaction.png) center top no-repeat; background-size: 72px 72px;  }
+.t-history .a-empty {background: url(../../images/no-account.png) center top no-repeat; background-size: 73px 73px; }
 
-.thumbnail-cont {display: flex; }
+.thumbnail-cont {display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;    /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Chrome */
+	display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */}
 .thumbnail-cont .qr_img {width: 80px; height: 80px; background: #fff; padding: 5px; margin-right: 22px;}
 .thumbnail-cont .qr_img img {width: 70px; height: 70px;}
 .thumbnail-cont .info {width: 70%;}
-.thumbnail-cont .info strong {font-size: 12px; font-weight: bold; margin-top: 5px;}
+.thumbnail-cont .info strong {font-size: 12px; font-weight: 500; margin-top: 5px;}
 .thumbnail-cont .info .address {font-size: 10px; max-width: 145px; word-wrap: break-word}
 .thumbnail-cont .list-more-btn {width: 20px; position: relative}
 
@@ -49,18 +53,24 @@
 .more img {height: 20px;}
 
 /* 계정관련 */
-.account-info {display: flex; margin-bottom: 10px;}
-.round-ico-area {width: 44px; margin-right: 10px;}
+.account-info {display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;    /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Chrome */
+	display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */ margin-bottom: 10px; position: relative}
+.round-ico-area {width: 44px; margin-right: 3px;}
 .round-ico {width: 34px; height: 34px; background-color: #7161f7; border-radius: 100px 100px; text-align: center;}
-.adr_info {background: url(../images/ico-address.png) left top no-repeat; background-size: 22px 22px; display: inline-block; width: 22px; height: 22px; margin-top: 6px }
-.key_info {background: url(../images/ico-key.png) left top no-repeat; background-size: 14px 20px; display: inline-block; width: 14px; height: 20px; margin-top: 7px }
-.word_info {background: url(../images/ico-word.png) left top no-repeat; background-size: 20px 14px; display: inline-block; width: 20px; height: 14px; margin-top: 10px }
-.cording_info {background: url(../images/ico-coding.png) left top no-repeat; background-size: 20px 20px; display: inline-block; width: 20px; height: 20px; margin-top: 7px }
-.account-cont {width: 100%; position: relative; line-height: 1.2;}
-.account-cont strong{font-size: 14px; color: #7161f7; font-weight: bold;}
+.adr_info {background-image: url(../../images/ico-address.png); background-position: left top; background-repeat: no-repeat;background-size: 22px 22px; display: inline-block; width: 22px; height: 22px; margin-top: 6px }
+.key_info {background: url(../../images/ico-key.png) left top no-repeat; background-size: 14px 20px; display: inline-block; width: 14px; height: 20px; margin-top: 7px }
+.word_info {background: url(../../images/ico-word.png) left top no-repeat; background-size: 20px 14px; display: inline-block; width: 20px; height: 14px; margin-top: 10px }
+.cording_info {background: url(../../images/ico-coding.png) left top no-repeat; background-size: 20px 20px; display: inline-block; width: 20px; height: 20px; margin-top: 7px }
+.account-cont {display: block;  line-height: 1.2;  width: -moz-calc(100% - 47px);  
+    width: -webkit-calc(100% - 47px);     
+    width: calc(100% - 47px);}
+.account-cont strong{font-size: 14px; color: #7161f7; font-weight: 500;}
 .account-cont .code {width: 100%;}
 .account-cont .code span {font-size: 12px; color: #b7b7b7; display: inline-block;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;width: 195px;}
-.account-cont .code .copy-btn {width: 37px;height: 22px;border-radius: 4px;background-color: #beccd9; font-size: 12px; color: #fff!important; text-align: center; line-height: 22px; position: absolute; right: 0; top: 16px;}
+.account-cont .code .copy-btn {width: 37px;height: 22px;border-radius: 4px;background-color: #beccd9; font-size: 12px; color: #fff!important; text-align: center; line-height: 22px; position: absolute; right: 20px; top: 36px;}
 .account-cont .sub-txt {font-size: 12px; color: #b7b7b7; margin-top: 2px; letter-spacing: -0.07em}
 .select-area {overflow: hidden; margin-bottom: 15px}
 .select-area li {float: left; margin-right: 14px;}
@@ -72,9 +82,9 @@
 .search-idpw .line {width: 1px;height: 8px;background-color: #ced4e2;display:inline-block; vertical-align: middle}
 .login-area {position: fixed; bottom: 30px; text-align: center; left: 0; right: 0; font-size: 12px;}
 .login-area p {color: #b7b7b7;  margin: 0}
-.login-area a{color: #2b2b2b; font-weight: bold; text-decoration:underline!important; margin-top: 4px; display: inline-block}
+.login-area a{color: #2b2b2b; font-weight: 500; text-decoration:underline!important; margin-top: 4px; display: inline-block}
 .agree-area {font-size: 12px; margin-top: 20px; text-align: center}
-.agree-area a {font-weight: bold; text-decoration: underline!important; }
+.agree-area a {font-weight: 500; text-decoration: underline!important; }
 .agree-area label {vertical-align: middle; margin-bottom: 2px!important}
 
 /* layer */
@@ -86,6 +96,80 @@
 
 /* form */
 .input-area label {font-size: 12px!important; color: #4c4c4c!important; font-weight: normal!important}
-.input-area input[type="text"],.input-area input[type="password"] {padding: 0 20px!important; border-radius: 6px;border: solid 1px #e4e4e4;background-color: #ffffff; height: 48px; color: #4c4c4c!important}
+.input-area input[type="text"],.input-area input[type="password"],.input-area .select-styled {padding: 0 20px!important; border-radius: 6px;border: solid 1px #e4e4e4;background-color: #ffffff; height: 48px; color: #4c4c4c!important; box-shadow: none!important}
 .input-area input[type="text"].v1 {text-align: center; font-size: 10px;}
-.input-area input::placeholder {color: #b7b7b7!important; font-size: 12px!important}
+.input-area input::placeholder{color: #b7b7b7!important; font-size: 12px!important}
+.input-area select{color: #4c4c4c!important; font-size: 12px!important;}
+
+
+.select {
+  position: relative;
+  margin-bottom: 15px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.select .selectBtn {
+  background: var(--bg1);
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: #fff;
+}
+.select .selectBtn:after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  right: 15px;
+  width: 6px;
+  height: 6px;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  border-right: 2px solid #666;
+  border-bottom: 2px solid #666;
+  transition: 0.2s ease;
+}
+.select .selectBtn.toggle {
+  border-radius: 3px 3px 0 0;
+}
+.select .selectBtn.toggle:after {
+  -webkit-transform: translateY(-50%) rotate(-135deg);
+          transform: translateY(-50%) rotate(-135deg);
+}
+.select .selectDropdown {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0 0 3px 3px;
+  overflow: hidden;
+  background: var(--bg1);
+  border-top: 1px solid #eee;
+  z-index: 1;
+  background: #fff;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  visibility: hidden;
+  transition: 0.2s ease;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+.select .selectDropdown .option {
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.select .selectDropdown .option:hover {
+  background: #f8f8f8;
+}
+.select .selectDropdown.toggle {
+  visibility: visible;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
