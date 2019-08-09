@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.num-txt {font-family: 'Roboto', sans-serif;}
+.num-txt {font-family: 'Roboto', sans-serif!important;}
 .round_box {display: block;border-radius: 10px!important;  padding: 20px;  position: relative}
 .round_box.bg01 {background-color: #7161f7;}/* purple */
 .round_box.bg02 {background-color: #f4f4f4; padding: 20px 20px 14px 20px!important;}/* gray */
@@ -100,6 +100,52 @@ a.reset-pin{text-decoration: underline!important; font-size: 12px; color: #b4abf
 .pin-num-area li {width: 33.3%; float: left; text-align: center}
 .pin-num-area li a {font-family: 'Roboto';font-size: 24px;font-weight: 500; color: #fff!important; padding: 20px 0; display: block}
 .pin-num-area li a img {width: 32px; height: 20px; vertical-align: top; margin-top: 8px;}
+
+/* 설정 */
+.setting-wrap {border-top:1px solid #eee;}
+.setting-list {padding: 0 20px;}
+.setting-list li {padding: 16px 0; border-bottom:1px solid #eee;}
+.setting-list li.v1{padding: 19px 0; position: relative}
+.setting-list li p{color: #b7b7b7; font-size: 12px; margin: 0}
+.setting-switch {position: absolute; right: 0; top:16px;}
+.logout {text-align: right; padding: 0 20px}
+.logout .btn-logout {color: #b7b7b7!important; font-size: 12px;}
+.material-switch > input[type="checkbox"] {
+    display: none;   
+}
+
+.material-switch > label {
+    cursor: pointer;
+    height: 0px;
+    position: relative; 
+    width: 40px;  
+}
+
+.material-switch > label::before {
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    content: '';
+    height: 16px;
+    position:absolute;
+    transition: all 0.4s ease-in-out;
+    width: 36px;
+}
+.material-switch > label::after {
+    border-radius: 20px;
+    background-color: #9a9a9a;
+    content: '';
+    height: 22px;
+    position: absolute;
+    top: -3px;
+    transition: all 0.3s ease-in-out;
+    width: 22px;
+}
+.material-switch > input[type="checkbox"]:checked + label::before {
+}
+.material-switch > input[type="checkbox"]:checked + label::after {
+    left: 16px;
+	background-color: #7161f7;
+}
 
 /* layer */
 .all-del {min-width: 140px!important; left: -120px!important; top: 36px!important; margin: 0!important; border: 0!important; text-align: center!important; padding: 0!important}
