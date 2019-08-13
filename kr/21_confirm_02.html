@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Audus Mobile</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+<link rel="stylesheet" href="../css/index_kr.css" type="text/css">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="u_skip"><a href="#Content">본문 바로가기</a></div>
+    <div id="Wapper">
+    	<!-- header -->
+        <header>
+            <span class="top-l-button"><a href="#" class="ico-top ico-top-prev">이전</a></span>
+			<h1>코인 보내기</h1>
+			<span class="top-r-button2"><a href="#" class="ico-top ico-top-refresh">새로고침</a></span>
+        </header>
+        <!-- //header -->
+        <!-- content -->
+		<div id="Content" class="v1">
+			<section>
+				<h2>코인 보내기</h2>
+				<p class="subject-txt">지정한 주소 및 휴대폰 번호로 토큰을 보냅니다. 보낼 수량을 지정해주세요</p>
+				<div class="round_box bg01 mb20 mt15">
+					<div class="address-ed">
+						<strong class="font-tp02">이더리움 주소</strong>
+						<div class="num num-txt">0x9bc7E077d17aC8842bAa7f6d C76456e2eEcac394</div>
+						<a href="#" class="copy">복사</a>
+					</div>
+				</div>
+			</section>
+			<section>
+				<h2>수취인의 주소 및 휴대폰 번호</h2>
+				<form>
+					<div class="form-group input-area">
+						<input type="text" class="form-control num-txt" placeholder="수취인의 주소 및 휴대폰 번호를 입력하세요">
+					</div>
+				</form>
+				<div class="btn-wrap">
+					<a href="#" class="btn-type one-btn b-default"><img src="../images/btn-qr.png" alt="qr" width="20" height="14"/>QR</a>
+				</div>
+			</section>
+			<section class="pb70">
+				<h2 class="mt20">수량</h2>
+				<p class="subject-txt v1">현재 잔액 0.000000</p>
+				<form>
+					<div class="form-group input-area">
+						<input type="text" class="form-control num-txt" placeholder="수량을 입력해주세요">
+					</div>
+				</form>
+				<h2 class="mt20">가스요금</h2>
+				<form>
+					<div class="form-group input-area">
+						<input type="text" class="form-control num-txt" placeholder="가스요금을 입력해주세요">
+					</div>
+				</form>
+				<h2 class="mt20">메모</h2>
+				<form>
+					<div class="form-group input-area">
+						<input type="text" class="form-control num-txt" placeholder="메모를 입력해주세요">
+					</div>
+				</form>
+				<div class="btn-wrap mt30">
+					<a href="#" class="btn-type two-btn b-line fl_l">취소</a><a href="#" class="btn-type two-btn b-default fl_r" data-toggle="modal" data-target="#sendCoinModal">보내기</a>
+				</div>
+			</section>
+    	</div>
+		<!-- //content -->
+		<!-- footer -->
+		<nav>
+			<ul class="footer-menu">
+				<li>
+					<a href="#">
+						<div class="ico-bottom ico-btm-menu01"></div>
+						<div>계정 내보내기</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="ico-bottom ico-btm-menu02"></div>
+						<div>계정 가져오기</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="ico-bottom ico-btm-menu03"></div>
+						<div>계정만들기</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="ico-bottom ico-btm-menu04"></div>
+						<div>설정</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="ico-bottom ico-btm-menu05"></div>
+						<div>정보</div>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- //footer -->
+	</div>
+	
+	
+	<!-- Modal -->
+	<div class="modal send-coin-confirm" id="sendCoinModal" tabindex="-1" role="dialog" aria-labelledby="sendCoinModalLabel" aria-hidden="true">
+		<div class="modal-dialog send-coin-box" role="document">
+			<div class="modal-content send-coin-cont">
+				<div class="modal-header">
+					<h5 class="modal-title">이체하시겠습니까?</h5>
+					<p class="fnt12">정보를 확인해주세요</p>
+					<!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>-->
+				</div>
+				<div class="modal-body">
+					<div class="row-area">
+						<span class="tit">휴대폰 번호</span>
+						<span class="info num-txt">010-8742-8109</span>
+					</div>
+					<div class="row-area">
+						<span class="tit">보낸 금액</span>
+						<span class="info num-txt">1.530000</span>
+					</div>
+					<div class="row-area">
+						<span class="tit">수수료</span>
+						<span class="info">면제</span>
+					</div>
+
+				</div>
+				<div class="modal-footer">
+					<div class="modal-btn-area">
+						<div class="tab-line v1"></div>
+						<button type="button" data-dismiss="modal">아니오</button>
+						<button type="button">예</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

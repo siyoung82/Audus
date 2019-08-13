@@ -38,10 +38,28 @@ nav {position: fixed; bottom: 0; left: 0; right: 0;}
 .footer-menu li a {opacity: 0.6;font-size: 10px;font-weight: 500;color: #9599c0!important; display: block;height: 56px;}
 .footer-menu li a:hover,.footer-menu li a:focus {color: #fff!important; opacity: 1}
 
-.rotate{animation:intro_rotate 5s linear infinite;}
-@keyframes intro_rotate{
-    from{transform:rotate(0deg)}
-    to{transform:rotate(360deg)}
+.rotate{
+	     animation: intro_rotate 5s linear infinite;
+ -webkit-animation: intro_rotate 5s linear infinite;
+    -moz-animation: intro_rotate 5s linear infinite;
+	 -ms-animation: intro_rotate 5s linear infinite;
+	  -o-animation: intro_rotate 5s linear infinite;
+}
+@-webkit-keyframes intro_rotate{
+  from{
+  -webkit-transform: rotate(0deg);
+	 -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+	   -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+	}
+  to{
+  -webkit-transform: rotate(360deg);
+	 -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+	   -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+	}
 }
 
 .image_set{margin-top:50%; text-align: center;}
@@ -100,6 +118,7 @@ nav {position: fixed; bottom: 0; left: 0; right: 0;}
 .mb30 {margin-bottom:30px!important;}
 .mr10 {margin-right:10px;}
 .mr5 {margin-right:5px;}
+.mb5 {margin-bottom: 5px!important}
 
 /* button */
 .btn-wrap {overflow:hidden;text-align:center;}

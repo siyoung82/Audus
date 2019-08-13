@@ -150,6 +150,8 @@ a.reset-pin{text-decoration: underline!important; font-size: 12px; color: #b4abf
 /* 이용약관 */
 .use-term {position: relative}
 .tab-line {width: 1px;height: 16px;background-color: #ececec; display: inline-block; position: absolute; left: 50%; top: 15px;}
+.tab-line.v1 { background-color: #ced4e2; height: 12px; top: 3px}
+
 .term-tab {border-top: 1px solid #ececec; border-bottom: 1px solid #ececec}
 .term-tab>li {width: 50%; margin-bottom: 0!important}
 .term-tab>li>a {font-size: 12px;color: #4d4d4d!important; text-align: center!important; padding: 14px!important; border-radius: 0!important; border:0!important;}
@@ -159,6 +161,46 @@ a.reset-pin{text-decoration: underline!important; font-size: 12px; color: #b4abf
 .term-tab-cont h4 {font-size: 14px; font-weight: 500; margin: 20px 0 10px 0;}
 .term-tab-cont .cont-box {font-size: 12px; color: #868686;}
 .term-tab .nav-link{color: #4d4d4d!important;}
+
+/* modal */
+.send-coin-confirm{top:inherit!important; bottom: 0!important; width: 100%!important }
+.send-coin-box {margin: 0!important; width: 100%!important }
+.send-coin-cont {border-radius: 0!important; border:0!important;background-color: #7161f7!important;}
+.send-coin-cont .modal-header {text-align: center; padding: 20px 0 20px!important; border-bottom: 1px solid #8476ff!important; margin: 0 40px;}
+.send-coin-cont .modal-title {color: #fff; text-align: center; font-size: 16px; font-weight: 500}
+.send-coin-cont .modal-body {font-size: 14px; color: #fff; overflow: hidden; padding: 20px 40px 30px !important;}
+.send-coin-cont .modal-body .tit {float: left; width: 30%}
+.send-coin-cont .modal-body .info {float: right; width: 70%; text-align: right;}
+.send-coin-cont .modal-body .add-info {font-size: 10px; display: block; float: left; width: 100%;}
+.send-coin-cont .row-area {margin-bottom: 10px; display: block; overflow: hidden}
+.send-coin-cont .modal-header p {font-size: 12px;color: #b4abfd; margin-bottom: 0!important}
+.send-coin-cont .modal-footer {border-top: 0!important; background: #fff; padding: 17px 0!important}
+.send-coin-cont .modal-btn-area {position: relative;}
+.send-coin-cont button {width: 50%; float: left; font-size: 14px; font-weight: 500;}
+
+.success-msg-header {text-align: center; padding: 0 0 20px!important; border-bottom: 1px solid #8476ff!important; margin: 0 40px; background: url(../../images/success.png) center 40px no-repeat; background-size: 70px 70px;}
+.success-msg-header .modal-title {color: #fff; text-align: center; font-size: 16px; font-weight: 500; padding-top: 140px;}
+.success-msg-header p {font-size: 12px;color: #b4abfd; margin-bottom: 0!important}
+
+.success-msg-cont {font-size: 14px; color: #fff; overflow: hidden; padding: 40px 40px 30px !important;}
+.success-msg-cont .tit {float: left; width: 30%}
+.success-msg-cont .info {float: right; width: 70%; text-align: right;}
+.success-msg-cont .add-info {font-size: 10px; display: block; float: left; width: 100%;}
+.success-msg-cont .row-area {margin-bottom: 10px; display: block; overflow: hidden}
+.success-msg-footer {position: fixed; bottom: 0; left: 0; right: 0; background: #fff;}
+.success-msg-footer {border-top: 0!important; background: #fff; padding: 17px 0!important}
+.success-msg-footer button {font-size: 14px; font-weight: 500; text-align: center; width: 100% }
+
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+}
 
 /* layer */
 .all-del {min-width: 140px!important; left: -120px!important; top: 36px!important; margin: 0!important; border: 0!important; text-align: center!important; padding: 0!important}
@@ -172,7 +214,7 @@ a.reset-pin{text-decoration: underline!important; font-size: 12px; color: #b4abf
 .input-area input[type="text"],.input-area input[type="password"],.input-area .select-styled,.input-area select {padding: 0 20px!important; border-radius: 6px;border: solid 1px #e4e4e4;background-color: #ffffff; height: 48px; color: #4c4c4c!important; box-shadow: none!important; }
 .input-area input[type="text"].v1 {text-align: center; font-size: 10px;}
 .input-area input::placeholder,.input-area textarea::placeholder{color: #b7b7b7!important; font-size: 12px!important}
-.input-area select{color: #4c4c4c!important; font-size: 12px!important; outline: 0!important;}
+.input-area select{color: #4c4c4c!important; font-size: 12px!important; outline: 0!important; background: url(../../images/dropdown_b.png) no-repeat 95% 50%; background-size: 10px 6px;}
 .input-area textarea {padding: 20px!important; border-radius: 6px;border: solid 1px #e4e4e4;background-color: #ffffff; color: #4c4c4c!important; box-shadow: none!important; height: 286px!important;}
 
 .select {
@@ -191,6 +233,7 @@ a.reset-pin{text-decoration: underline!important; font-size: 12px; color: #b4abf
   position: relative;
   -webkit-user-select: none;
      -moz-user-select: none;
+	   -o-user-select: none;
       -ms-user-select: none;
           user-select: none;
   background: #fff;
@@ -203,7 +246,11 @@ a.reset-pin{text-decoration: underline!important; font-size: 12px; color: #b4abf
   width: 6px;
   height: 6px;
   -webkit-transform: translateY(-50%) rotate(45deg);
+	 -moz-transform: translateY(-50%) rotate(45deg);
+      -ms-transform: translateY(-50%) rotate(45deg);
+	   -o-transform: translateY(-50%) rotate(45deg);
           transform: translateY(-50%) rotate(45deg);
+
   border-right: 2px solid #666;
   border-bottom: 2px solid #666;
   transition: 0.2s ease;
@@ -213,6 +260,9 @@ a.reset-pin{text-decoration: underline!important; font-size: 12px; color: #b4abf
 }
 .select .selectBtn.toggle:after {
   -webkit-transform: translateY(-50%) rotate(-135deg);
+	 -moz-transform: translateY(-50%) rotate(-135deg);
+      -ms-transform: translateY(-50%) rotate(-135deg);
+	   -o-transform: translateY(-50%) rotate(-135deg);
           transform: translateY(-50%) rotate(-135deg);
 }
 .select .selectDropdown {
