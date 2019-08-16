@@ -180,7 +180,9 @@ nav {position: fixed; bottom: 0; left: 0; right: 0;}
 .m-btn02 {background: #eaeef6; color: #4c4c4c; float: right;}
 .b-default {background-color: #7161f7; border: 1px solid #7161f7; color: #fff!important; }
 .b-default img {vertical-align: middle; margin-right: 7px; margin-top: -1px;}
-.b-default:hover,.b-default:focus {color: #fff!important; opacity: 0.8}
+.b-default:hover {color: #fff!important; opacity: 0.8}
+.b-default:focus {color: #fff!important; opacity: 1}
+
 .b-line {border: solid 1px #e4e4e4; background-color: #ffffff; color: #4c4c4c!important;}
 
 
