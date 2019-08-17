@@ -38,6 +38,8 @@ nav {position: fixed; bottom: 0; left: 0; right: 0;}
 .footer-menu li a {opacity: 0.6;font-size: 10px;font-weight: 500;color: #9599c0!important; display: block;height: 56px;}
 .footer-menu li a:hover,.footer-menu li a:focus {color: #fff!important; opacity: 1}
 
+.logo-outside {background: url(../../images/logo-outside.png) no-repeat; width: 92px; height: 103px; background-size: 92px 103px; display: inline-block}
+.logo-outside img {width: 43px; height: 37px; margin-top: 32px;}
 .rotate{
 	     animation: intro_rotate 5s linear infinite;
  -webkit-animation: intro_rotate 5s linear infinite;
@@ -68,15 +70,15 @@ nav {position: fixed; bottom: 0; left: 0; right: 0;}
   left: 50%;
   top: 50%;
   z-index: 1;
-  width: 80px;
-  height: 80px;
-  margin: -40px 0 0 -40px;
-  animation: spin 2s linear infinite;
+  margin: -36px 0 0 -30px;
+}
+#loader div {background: url(../../images/logo-loader-out.png) no-repeat; width: 60px; height: 67px; background-size: 60px 67px; display: inline-block; text-align: center}
+#loader div img{width: 28px; height: 24px; margin-top: 22px; text-align: center}
+.rotate-loader {  animation: spin 2s linear infinite;
  -webkit-animation: spin 2s linear infinite;
     -moz-animation: spin 2s linear infinite;
 	 -ms-animation: spin 2s linear infinite;
-	  -o-animation: spin 2s linear infinite;
-}
+	  -o-animation: spin 2s linear infinite;}
 
 @-webkit-keyframes spin{
   from{
@@ -115,16 +117,16 @@ nav {position: fixed; bottom: 0; left: 0; right: 0;}
 
 
 .ico-bottom {background:url(../../images/ico-bottom.png) left top no-repeat; display:inline-block;background-size:20px 200px; text-indent:-99999px; width:20px; height:20px; text-align: center; margin-top: 11px;}
-.ico-btm-menu01 {background-position:0 0; }
-.ico-btm-menu02 {background-position:0 -20px; }
-.ico-btm-menu03 {background-position:0 -40px; }
-.ico-btm-menu04 {background-position:0 -60px; }
-.ico-btm-menu05 {background-position:0 -80px; }
-.ico-btm-menu01:hover,.ico-btm-menu01:focus{background-position:0 -100px; }
-.ico-btm-menu02:hover,.ico-btm-menu02:focus{background-position:0 -120px; }
-.ico-btm-menu03:hover,.ico-btm-menu03:focus{background-position:0 -140px; }
-.ico-btm-menu04:hover,.ico-btm-menu04:focus{background-position:0 -160px; }
-.ico-btm-menu05:hover,.ico-btm-menu05:focus{background-position:0 -180px; }
+.ico-btm-menu01 {background-position:0 -20px; }
+.ico-btm-menu02 {background-position:0 0px; }
+.ico-btm-menu03 {background-position:0 -60px; }
+.ico-btm-menu04 {background-position:0 -80px; }
+.ico-btm-menu05 {background-position:0 -40px; }
+.ico-btm-menu01:hover,.ico-btm-menu01:focus{background-position:0 -120px; }
+.ico-btm-menu02:hover,.ico-btm-menu02:focus{background-position:0 -100px; }
+.ico-btm-menu03:hover,.ico-btm-menu03:focus{background-position:0 -160px; }
+.ico-btm-menu04:hover,.ico-btm-menu04:focus{background-position:0 -180px; }
+.ico-btm-menu05:hover,.ico-btm-menu05:focus{background-position:0 -140px; }
 
 
 /* align */
