@@ -72,7 +72,7 @@
 .account-cont .code {width: 100%;}
 .account-cont .code span {font-size: 12px; color: #b7b7b7; display: inline-block;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;width: 195px;}
 .account-cont .code .copy-btn {width: 37px;height: 22px;border-radius: 4px;background-color: #beccd9; font-size: 12px; color: #fff!important; text-align: center; line-height: 22px; position: absolute; right: 20px; top: 36px;}
-.account-cont .sub-txt {font-size: 12px; color: #b7b7b7; margin-top: 2px;}
+.account-cont .sub-txt {font-size: 12px; color: #b7b7b7; margin-top: 2px; letter-spacing: -0.07em}
 .select-area {overflow: hidden; margin-bottom: 15px}
 .select-area li {float: left; margin-right: 14px;}
 .add-accout-box a{height: 160px;border-radius: 10px; display: block; font-size: 12px; color: #fff!important; text-align: center;font-weight: 500; background:#7161f7 url(../../images/add-accout.png) no-repeat center 44px; background-size: 40px 40px; overflow: hidden; padding-top: 103px;}
