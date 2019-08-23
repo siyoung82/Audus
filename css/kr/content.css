@@ -28,7 +28,7 @@
 .t-history-list {color: #4c4c4c;}
 .t-history-list li{margin-bottom: 10px;}
 .t-history-list .address {font-size: 10px; margin-bottom: 0!important}
-.t-history-list strong .update {width: 4px;height: 4px; background-color: #7161f7; display: inline-block; border-radius: 100px 100px; vertical-align: top; margin-right: 4px; margin-top: 10px}
+.t-history-list strong .update {width: 10px;height: 10px; background-color: #7161f7; display: inline-block; border-radius: 100px 100px; vertical-align: top; margin-right: 4px; margin-top: 7px}
 .t-history-list .date {font-size: 12px; margin-top: 4px; margin-bottom: 0}
 .t-history .no-list {font-size: 14px; color: #b7b7b7; text-align: center; margin-top: 50px;}
 .t-history .t-empty,.t-history .a-empty {font-size: 14px; color: #92a8bc; text-align: center; margin-top: 50%; padding-top: 82px;}
